@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import UserCard from '../UserCard';
 import { useSelector, useDispatch } from 'react-redux';
 import FollowBtn from '../FollowBtn';
@@ -38,28 +38,70 @@ const RightSideBar = () => {
           })}
         </div>
       )}
-      <div
-        className="mt-5"
-        style={{
-          zIndex: -1,
-          border: '1px solid rgb(13, 202, 240)',
-          borderRadius: '1em',
-          boxShadow: '0 0 5px #ddd',
-          padding: '1em',
-          backgroundColor: '#F1F6FA',
-        }}
-      >
-        <a href="https://github.com/devat-youtuber" target="_blank" rel="noopener noreferrer">
-          Original source code from{' '}
-          <b style={{ textDecoration: 'underline', wordBreak: 'break-all' }}>Dev A.T Viet Nam</b>
-          &nbsp;(senior developer)
-        </a>
-        <br />
-        <p className="mt-2">
-          <b>Note: </b>
-          This project completely is based on Dev A.T's works and made for the sake of learning and
-          experimenting. However, further improvements will be implemented if viable.
-        </p>
+
+      <div class="accordion">
+        <div
+          class="card"
+          style={{ border: '1px solid rgb(13, 202, 240)', borderRadius: '0 0 1em 1em' }}
+        >
+          <div class="card-header" style={{ backgroundColor: '#F1F6FA' }}>
+            <h2 className="mb-0">
+              <button
+                className="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseCredits"
+                aria-expanded="true"
+                aria-controls="collapseCredits"
+              >
+                Credits
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseCredits"
+            className="collapse show"
+            style={{
+              backgroundColor: '#F1F6FA',
+              borderRadius: '0 0 1em 1em',
+            }}
+          >
+            <div
+              className="card-body"
+              style={{
+                zIndex: -1,
+                padding: '1em',
+              }}
+            >
+              <p>
+                Hi there! Thank you for the visiting! Im{' '}
+                <a href="https://github.com/nnguyen52" target="_blank">
+                  Jer Ngn
+                </a>
+                . I love learning to make web app with sophisticated texhnology like ReactJS lib.
+                This project i learned from a very talented senior developer (credit below).If you
+                are interested in fullstack applications, i highly recommend you to visit DevAT's
+                lessons. He tutors many great intermediate techniques such as MERN, redux,
+                authentication, Nextjs and well applied to projects such as this project and
+                ECommerce.
+              </p>
+              <a href="https://github.com/devat-youtuber" target="_blank" rel="noopener noreferrer">
+                Original source code from
+                <b style={{ textDecoration: 'underline', wordBreak: 'break-all' }}>
+                  Dev A.T Viet Nam
+                </b>
+                &nbsp;(senior developer)
+              </a>
+              <br />
+              <p className="mt-2">
+                <b>Note: </b>
+                This project completely is based on Dev A.T's works and made for the sake of
+                learning and experimenting. However, further improvements will be implemented if
+                viable.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
