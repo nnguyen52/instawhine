@@ -1,0 +1,117 @@
+.status_modal {
+  position: fixed;
+
+  width: 100%;
+  height: 100vh;
+  background: #0008;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  overflow: auto;
+}
+.status_modal form {
+  max-width: 450px;
+  width: 100%;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.status_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  transform: translateY(-13px);
+}
+.status_header span {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: 900;
+  transform: translateY(-5px);
+}
+
+.status_body textarea {
+  width: 100%;
+  min-height: 150px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.status_body .input_images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.status_body .input_images i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.status_body .input_images .file_upload {
+  overflow: hidden;
+  margin: 0 10px;
+  position: relative;
+}
+.status_body .input_images .file_upload #file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.status_body .show_images {
+  max-height: 270px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 5px;
+  place-items: center;
+}
+.status_body .show_images #file_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.status_body .show_images #file_img img,
+.status_body .show_images #file_img video {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  padding: 0.2em;
+}
+.status_body .show_images #file_img span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  z-index: 4;
+  background: white;
+  border: solid 1px crimson;
+  padding: 3px 7px;
+  width: fit-content;
+  height: fit-content;
+  color: crimson;
+  border-radius: 50%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.status_body .stream span {
+  position: absolute;
+  top: -12px;
+  left: -0.8em;
+  font-size: 1rem;
+  color: crimson;
+  border-radius: 50%;
+  border: solid 1px crimson;
+  background: white;
+  padding: 0 8px;
+}
+.status_body .dropdown-menu {
+  transform: translate3d(40px, -168px, 0px) !important;
+}

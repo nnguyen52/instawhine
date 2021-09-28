@@ -1,0 +1,29 @@
+@keyframes like-heart-animation {
+  0%,
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  15% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  30% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  45%,
+  80% {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.like {
+  animation: 2s like-heart-animation ease-in-out forwards;
+}
+.heartStart {
+  z-index: 4;
+}

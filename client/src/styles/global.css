@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  height: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+/* this is for black-white switching theme*/
+/* ~ is Subsequent-sibling Combinator */
+#theme {
+  display: none;
+}
+#theme:checked ~ .App {
+  filter: invert(1);
+}
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+img {
+  object-fit: cover;
+}
+
+/* cursor for all icons  */
+.far,
+.fas,
+.fa {
+  cursor: pointer;
+}
+
+/* --------AUTH------- */
+@import './auth.css';
+
+/* --------LOADING---- */
+@import './loading.css';
+
+/* -------AVATAR----- */
+@import './avatar.css';
+
+/* --------HEADER---- */
+@import './header.css';
+
+.userCard:hover {
+  background: rgb(250, 250, 250);
+}
+
+/* ----PROFILE---- */
+@import './profile.css';
+
+/* ----followers_user_card---- */
+@import './followers.css';
+
+/* -----Home----- */
+@import './home.css';
+
+/* -----StatusModal------ */
+@import './statusModal.css';
+
+/* ---heart */
+@import './heart.css';
+
+/* ---Comments-- */
+@import './comments.css';
+
+/* -------Post_thumb----- */
+@import './post_thumb.css';
+
+/* ------Message------- */
+@import './message.css';
+
+/* -----------Icons--------- */
+@import './icons.css';
+
+/* ---------Call_modal------ */
+@import './call_modal.css';
+
+/* ------RESPONSIVE CSS------- */
+@media (max-width: 766px) {
+  .header .navbar .logo {
+    display: none;
+  }
+  .header .menu {
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+  }
+
+  .header .menu .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header .menu .navbar-nav > :last-child {
+    padding-right: 1em;
+  }
+  .header .menu .dropdown-menu {
+    top: -150px;
+    right: 1em;
+  }
+  .header .search_form {
+    width: 100%;
+  }
+  .header .logo {
+    margin: auto;
+  }
+  .header .logo h1 {
+    font-size: 1.5rem;
+  }
+  .header .search_form .users .userCard > :first-child {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(10px);
+  }
+  .header .search_form .users .userCard > :nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* menu notify */
+  .header .menu .notify_length {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
+  .header .notify_modal {
+    background: white;
+    position: absolute;
+    top: -240px;
+    left: -1em;
+    min-width: 200px;
+    border-radius: 10px;
+  }
+  .header .notify_data {
+    max-height: 300px;
+    height: 300px;
+    overflow-y: hidden;
+  }
+  .message {
+    height: calc(100vh - 112px);
+  }
+  .right_mess,
+  .left_mess {
+    display: none;
+  }
+  .message_header .col-9 {
+    transform: translateX(-7%) !important;
+  }
+
+  .status {
+    padding: 20px 10px;
+  }
+  .search_form .users {
+    z-index: 3;
+  }
+  .menu .dropdown-menu {
+    transform: translate(53px, 211px);
+  }
+  .menu .notify_modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-74px, 211px);
+    border: 1px solid #ddd;
+  }
+}
+
+.mode {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

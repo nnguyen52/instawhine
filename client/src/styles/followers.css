@@ -1,0 +1,10 @@
+.followers_user_card .userCard > :first-child {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateX(10px);
+}
+
+.followers_user_card .userCard > :nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+}

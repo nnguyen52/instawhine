@@ -1,0 +1,187 @@
+.profile {
+  width: 100%;
+  min-height: 100vh;
+}
+/* -----INFO------ */
+.info {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+.info_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.info_content {
+  min-width: 250px;
+  max-width: 550px;
+  width: 100%;
+  flex: 1;
+  opacity: 0.9;
+  margin: 0 1em;
+}
+.info_content_title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info_content_title h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  transform: translateY(5px);
+  flex: 3;
+}
+.info_content_title button {
+  flex: 2;
+}
+
+.info_container .follow_btn {
+  color: teal;
+  display: flex;
+}
+
+.info_container .follow_btn > span {
+  margin-left: 1em;
+  cursor: pointer;
+}
+.info_container .follow_btn > :first-child {
+  margin-left: 0;
+}
+.info_container .follow_btn span:hover {
+  text-decoration: underline;
+}
+
+/* -----Profile edit------ */
+.edit_profile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0008;
+  z-index: 9;
+  overflow: auto;
+}
+.edit_profile form {
+  max-width: 450px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+.edit_profile .btn_close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.edit_profile .info_avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: 15px auto;
+}
+.edit_profile .info_avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.edit_profile .info_avatar span {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 50%;
+  color: orange;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  background: #fff5;
+  transform: translateY(25px);
+}
+.edit_profile .info_avatar:hover span {
+  bottom: 10px;
+}
+.edit_profile .info_avatar #file_up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  padding: 2em;
+  transform: translateY(-65px);
+  border-radius: 50%;
+  opacity: 0;
+}
+::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+/* -------Followers-------- */
+.follow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0008;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+}
+.follow-box {
+  width: 350px;
+  height: 400px;
+  border-radius: 5px;
+  background: white;
+  padding: 20px 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: visible;
+}
+.follow-box .close {
+  position: absolute;
+  cursor: pointer;
+  top: -10px;
+  right: 0;
+  font-size: 3rem;
+}
+.follow-box .btn {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-3.3em);
+}
+.follow-box .followers_user_card .userCard > :first-child > *,
+.follow-box .followers_user_card .userCard > :nth-child(2) > * {
+  transform: translateX(-1.5em);
+}
+
+/* -------Save/Bookmark--------- */
+.profile_tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid#eee;
+  border-bottom: 1px solid#eee;
+}
+.profile_tab button {
+  outline: none;
+  border: none;
+  background: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 5px 20px;
+  margin: 0 25px;
+  opacity: 0.6;
+}
+
+.profile_tab button.active {
+  border-top: 1px solid #000;
+}

@@ -1,0 +1,33 @@
+### 
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+    "fullName" : "huy_nguyen" , 
+    "username" : "huy", 
+    "email" : "huy@gmail" , 
+    "password" : "1231233", 
+    "gender" : "male"
+}
+
+###
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email" : "huy@gmail" ,
+    "password" : "1231233"
+}
+
+###
+POST http://localhost:5000/api/logout
+
+###
+POST http://localhost:5000/api/refresh_token
+
+###
+GET http://localhost:5000/api/posts 
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMzBkNWZiY2E3ZWNlMGNhMGY4MDljMyIsImlhdCI6MTYzMDk1MTE0NywiZXhwIjoxNjMxMDM3NTQ3fQ.N9t22ZxIY2GEbMayaDBDmyszswec1mQaTQHSxLykvRs
+
+###
