@@ -42,6 +42,12 @@ img {
   cursor: pointer;
 }
 
+/* -----Instawhine font---- */
+@font-face {
+  font-family: customInstaFont;
+  src: url('./VeganStylePersonalUse-5Y58.ttf');
+}
+
 /* --------AUTH------- */
 @import './auth.css';
 
@@ -118,6 +124,7 @@ img {
   }
   .header .logo h1 {
     font-size: 1.5rem;
+    font-family: customInstaFont !important;
   }
   .header .search_form .users .userCard > :first-child {
     display: flex;

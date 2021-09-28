@@ -20,6 +20,7 @@
 }
 .header .logo h1 {
   font-size: 2rem;
+  font-family: customInstaFont !important;
 }
 /* ----HEADER_MENU------ */
 .header .menu li {
@@ -116,4 +117,7 @@
 .header .search_form .users .userCard > :nth-child(2) {
   display: flex;
   justify-content: flex-start;
+}
+.custom_font {
+  font-family: customInstaFont !important;
 }

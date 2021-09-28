@@ -38,7 +38,7 @@ const Saved = ({ auth, dispatch }) => {
     <div>
       <PostThumb posts={savePosts} result={result} />
       {load && <LoadingLottie />}
-      {!load && (
+      {!load && savePosts.length > 0 && (
         <LoadMoreBtn result={result} page={page} load={load} handleLoadMore={handleLoadMore} />
       )}
     </div>

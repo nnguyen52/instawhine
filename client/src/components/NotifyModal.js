@@ -31,7 +31,7 @@ const NotifyModal = () => {
   return (
     <div style={{ minWidth: '300px' }} className="notify_modal">
       <div className="d-flex justify-content-between align-items-center px-2">
-        <h3>Notification</h3>
+        <h4 className="custom_font">Notification</h4>
         {notify.sound || localStorage.getItem('Instawhine_notification') === 'true' ? (
           <i
             className="fas fa-bell text-danger"

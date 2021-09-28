@@ -13,7 +13,7 @@ const Header = () => {
           style={{ textDecoration: 'none' }}
           onClick={() => window.scrollTo({ top: 0 })}
         >
-          <h1 className="navbar-brand text-uppercase">Instawhine</h1>
+          <h1 className="navbar-brand ">Instawhine</h1>
         </Link>
         <Search />
         <Menu />
