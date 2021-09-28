@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe3e49ab.chunk.css",
-    "main.js": "/static/js/main.93213cbc.chunk.js",
-    "main.js.map": "/static/js/main.93213cbc.chunk.js.map",
+    "main.css": "/static/css/main.b3baa94b.chunk.css",
+    "main.js": "/static/js/main.a088ea10.chunk.js",
+    "main.js.map": "/static/js/main.a088ea10.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.030d23ff.js",
     "runtime-main.js.map": "/static/js/runtime-main.030d23ff.js.map",
     "static/js/2.df777032.chunk.js": "/static/js/2.df777032.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.6088e282.chunk.js": "/static/js/3.6088e282.chunk.js",
     "static/js/3.6088e282.chunk.js.map": "/static/js/3.6088e282.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.fe3e49ab.chunk.css.map": "/static/css/main.fe3e49ab.chunk.css.map",
+    "static/css/main.b3baa94b.chunk.css.map": "/static/css/main.b3baa94b.chunk.css.map",
     "static/js/2.df777032.chunk.js.LICENSE.txt": "/static/js/2.df777032.chunk.js.LICENSE.txt",
     "static/media/messenger.9e7ad575.mp3": "/static/media/messenger.9e7ad575.mp3",
     "static/media/pikachu.png": "/static/media/pikachu.bb7bf81e.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.030d23ff.js",
     "static/js/2.df777032.chunk.js",
-    "static/css/main.fe3e49ab.chunk.css",
-    "static/js/main.93213cbc.chunk.js"
+    "static/css/main.b3baa94b.chunk.css",
+    "static/js/main.a088ea10.chunk.js"
   ]
 }
