@@ -43,6 +43,7 @@ const InputComment = ({ children, post, onReply, setOnReply }) => {
           filter: theme ? 'invert(1)' : 'invert(0)',
           color: theme ? 'white' : '#111',
           background: theme ? 'rgba(0,0,0,.03)' : '',
+          width: onReply ? '90%' : '',
         }}
         type="textbox"
         value={content}
@@ -50,6 +51,7 @@ const InputComment = ({ children, post, onReply, setOnReply }) => {
         onChange={(e) => setContent(e.target.value)}
       />
       <Icons content={content} setContent={setContent} />
+
       <button type="submit" className="postBtn">
         {onReply ? 'Reply' : 'Post'}
       </button>
