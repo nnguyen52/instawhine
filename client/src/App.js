@@ -36,7 +36,7 @@ function App() {
       document.getElementById('theme').checked = true;
       dispatch({ type: GLOBALTYPES.THEME, payload: !theme });
     }
-  }, [dispatch, theme]);
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(refreshToken());

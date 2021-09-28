@@ -38,13 +38,12 @@ const RightSideBar = () => {
           })}
         </div>
       )}
-
-      <div class="accordion">
+      <div className="accordion">
         <div
-          class="card"
+          className="card"
           style={{ border: '1px solid rgb(13, 202, 240)', borderRadius: '0 0 1em 1em' }}
         >
-          <div class="card-header" style={{ backgroundColor: '#F1F6FA' }}>
+          <div className="card-header" style={{ backgroundColor: '#F1F6FA' }}>
             <h2 className="mb-0">
               <button
                 className="btn btn-link"
@@ -75,7 +74,7 @@ const RightSideBar = () => {
             >
               <p>
                 Hi there! Thank you for the visiting! Im{' '}
-                <a href="https://github.com/nnguyen52" target="_blank">
+                <a href="https://github.com/nnguyen52" target="_blank" rel="noreferrer">
                   Jer Ngn
                 </a>
                 . I love learning to make web app with sophisticated texhnology like ReactJS lib.

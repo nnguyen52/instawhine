@@ -29,7 +29,6 @@ export const getConversations =
   async (dispatch) => {
     try {
       const res = await getDataAPI(`conversations/?limit=${page}`, auth.token);
-      console.log(res.data);
       let newArr = [];
       res.data.conversations.forEach((item) => {
         item.recipients.forEach((cv) => {
