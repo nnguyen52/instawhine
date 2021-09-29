@@ -25,7 +25,7 @@ export const imageUpload = async (images) => {
     //upload url: API image upload
     formData.append('upload_preset', 'cpfj5eol');
     formData.append('cloud_name', 'cloudinarystore');
-
+    formData.append('folder', 'instawhine');
     const res = await fetch('https://api.cloudinary.com/v1_1/cloudinarystore/upload', {
       method: 'POST',
       body: formData,

@@ -34,6 +34,7 @@ const RightSide = () => {
   const [isLoadMore, setIsLoadMore] = useState(false);
 
   useEffect(() => {
+    // find data in message pool
     const newData = message.data.find((item) => item._id === id);
     if (newData) {
       setData(newData.messages);
@@ -55,6 +56,7 @@ const RightSide = () => {
   }, [message.users, id]);
 
   useEffect(() => {
+    //find the recipients' messages immediately when rightside render
     const getMessagesData = async () => {
       if (message.data.every((item) => item._id !== id)) {
         await dispatch(getMessages({ auth, id }));
@@ -85,6 +87,7 @@ const RightSide = () => {
     }
     return setMedia([...media, ...newMedia]);
   };
+
   const handleDeleteMedia = (index) => {
     const newArr = [...media];
     newArr.splice(index, 1);
@@ -102,6 +105,7 @@ const RightSide = () => {
 
     let newArr = [];
     if (media.length > 0) {
+      // check media
       newArr = await imageUpload(media);
     }
     const msg = {

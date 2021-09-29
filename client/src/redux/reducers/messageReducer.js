@@ -26,6 +26,7 @@ const messageReducer = (state = initialState, action) => {
             ? { ...item, messages: [...item.messages, action.payload], result: item.result + 1 }
             : item
         ),
+        // update message in left side
         users: state.users.map((user) =>
           user._id === action.payload.recipient || user._id === action.payload.sender
             ? {

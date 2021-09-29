@@ -9,6 +9,7 @@ const Message = () => {
       <div className="col-md-4 border-right px-0">
         <LeftSide />
       </div>
+      {/* .right_mess for reponsive styling */}
       <div className="col-md-8 px-0 right_mess">
         <div className="d-flex justify-content-center align-items-center flex-column h-100 ">
           <i

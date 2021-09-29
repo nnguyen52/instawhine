@@ -1,6 +1,9 @@
 .message {
   width: 100%;
+  /* MUST specify height => make it fixed  */
   height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
   border: 1px solid #ddd;
   margin-top: 15px;
   border-radius: 3px;
@@ -30,6 +33,7 @@
 .message_chat_list {
   width: 100%;
   height: calc(100% - 60px);
+  max-height: calc(100% - 60px);
   overflow-y: auto;
 }
 .message_chat_list .message_user {
@@ -136,6 +140,7 @@
 .chat_container {
   width: 100%;
   height: calc(100% - 110px);
+  max-height: calc(100% - 110px);
   overflow-y: auto;
   padding: 0 10px;
 }
