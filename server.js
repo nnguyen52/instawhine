@@ -4,10 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const SocketServer = require('./socketServer');
-
-//peer config for calling
 const { ExpressPeerServer } = require('peer');
-
 const path = require('path');
 
 const app = express();
@@ -53,7 +50,6 @@ mongoose.connect(
 );
 
 if (process.env.NODE_ENV === 'production') {
-  console.log('in production');
   app.use(express.static('client/build'));
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
