@@ -58,16 +58,16 @@ const UserCard = ({
         </div>
         <div
           className="col-9"
-          style={{
-            transform:
-              customStyle && window.innerWidth <= 768
-                ? 'translateX(-18%)'
-                : customStyle && window.innerWidth >= 1080
-                ? 'translateX(-22%)'
-                : '',
-          }}
+          // style={{
+          //   transform:
+          //     customStyle && window.innerWidth <= 768
+          //       ? 'translateX(-18%)'
+          //       : customStyle && window.innerWidth >= 1080
+          //       ? 'translateX(-22%)'
+          //       : '',
+          // }}
         >
-          <div>
+          <div className="content">
             <span>{user.userName}</span> <br />
             <small style={{ opacity: '.7', filter: theme ? 'invert(1)' : 'invert(0)' }}>
               {msg ? showMsg(user) : user.fullName}

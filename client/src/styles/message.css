@@ -30,6 +30,9 @@
 .message_header .userCard {
   margin-right: 10px;
 }
+.message_header .col-9 .content {
+  transform: translateX(-2.5em);
+}
 .message_chat_list {
   width: 100%;
   height: calc(100% - 60px);

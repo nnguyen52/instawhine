@@ -202,7 +202,7 @@ const RightSide = () => {
       <div className="message_header" style={{ cursor: 'pointer' }}>
         {user.length !== 0 && (
           <>
-            <UserCard user={user} customStyle={true}>
+            <UserCard user={user} customStyle={true} className="userCard_rightsidebar">
               <i className="fas fa-phone-alt" onClick={handlePhoneCall} />
               <i className="fas fa-video mx-3" onClick={handleVideoCall} />
               <i className="fas fa-trash text-danger" onClick={handleDeleteConversation} />

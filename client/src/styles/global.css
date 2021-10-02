@@ -95,6 +95,7 @@ img {
 @import './call_modal.css';
 
 /* ------RESPONSIVE CSS------- */
+
 @media (max-width: 766px) {
   .header .navbar .logo {
     display: none;
@@ -183,8 +184,16 @@ img {
     transform: translate(-94px, 196px);
     border: 1px solid #ddd;
   }
+  .message_header .col-9 .content {
+    transform: translateX(0);
+  }
 }
-
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  .message_header .col-9 .content {
+    transform: translateX(-2.5em);
+  }
+}
 .mode {
   width: 100%;
   height: 100%;
