@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import UserCard from '../UserCard';
 import { useSelector, useDispatch } from 'react-redux';
 import FollowBtn from '../FollowBtn';

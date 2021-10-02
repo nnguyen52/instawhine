@@ -23,18 +23,12 @@ io.on('connection', (socket) => {
 ExpressPeerServer(http, { path: '/' });
 
 // Routes
-const authRoute = require('./routes/authRouter');
-const userRoute = require('./routes/userRouter');
-const postRoute = require('./routes/postRoute');
-const commentRoute = require('./routes/commentRouter');
-const notifyRoute = require('./routes/notifyRouter');
-const messageRoute = require('./routes/messageRouter');
-app.use('/api', authRoute);
-app.use('/api', userRoute);
-app.use('/api', postRoute);
-app.use('/api', commentRoute);
-app.use('/api', notifyRoute);
-app.use('/api', messageRoute);
+app.use('/api', require('./routes/authRouter'));
+app.use('/api', require('./routes/userRouter'));
+app.use('/api', require('./routes/postRoute'));
+app.use('/api', require('./routes/commentRouter'));
+app.use('/api', require('./routes/notifyRouter'));
+app.use('/api', require('./routes/messageRouter'));
 
 const URI = process.env.MONGODB_URL;
 mongoose.connect(

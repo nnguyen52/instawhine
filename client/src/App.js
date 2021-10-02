@@ -36,6 +36,7 @@ function App() {
       document.getElementById('theme').checked = true;
       dispatch({ type: GLOBALTYPES.THEME, payload: !theme });
     }
+    // DO NOT PUT THEME AS DEPENDENCY HERE
   }, [dispatch]);
 
   useEffect(() => {

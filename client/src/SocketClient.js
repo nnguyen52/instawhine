@@ -192,6 +192,7 @@ const SocketClient = () => {
     });
     return () => socket.off('endCallToClient');
   }, [socket, dispatch]);
+
   return (
     <>
       <audio ref={audioRef} controls style={{ display: 'none' }}>
